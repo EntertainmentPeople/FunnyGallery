@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_titlebar">
+        <Button
+            android:id="@+id/btn_offline"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_btn_offline_selector" />
+
+        <RelativeLayout
+            android:id="@+id/rl_spinner_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_spinner"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/menu_bg_up">
+                <Spinner
+                    android:id="@+id/spinner_menu"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:dropDownWidth="130dp"
+                    android:gravity="center"
+                    android:popupBackground="@drawable/popup_menu"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_down"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_spinner"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/menu_bg_down" />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_spinner"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/menu_bg" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_refresh_selector" />
+
+        <!--<TextView
+            android:id="@+id/tv_refresh_num"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/figure_bar"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />-->
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_menu"
+        android:layout_below="@+id/rl_title"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_tab_at_bottom_of_flow"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_heavy"
+            style="@style/MenuRadioButton"
+            android:layout_marginLeft="5sp"
+            android:checked="true"
+            android:text="@string/radio_button_heavy" />
+
+
+        <RadioButton
+            android:id="@+id/rb_comic"
+            style="@style/MenuRadioButton"
+            android:text="@string/radio_button_comic" />
+
+        <RadioButton
+            android:id="@+id/rb_meng"
+            style="@style/MenuRadioButton"
+            android:text="@string/radio_button_meng" />
+
+        <RadioButton
+            android:id="@+id/rb_gif"
+            style="@style/MenuRadioButton"
+            android:text="@string/radio_button_gif" />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            style="@style/MenuRadioButton"
+            android:layout_marginRight="5dp"
+            android:text="@string/radio_button_more" />
+    </RadioGroup>
+</RelativeLayout>

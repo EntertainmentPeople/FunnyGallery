@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/iv_gif_list_show"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/tv_gif_list_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_gif_list_show"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/icon_arrow" />
+    <RadioButton
+        android:id="@+id/rb_gif_list_favor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@drawable/ss_favor_icon"
+        android:text="21"
+        android:layout_marginRight="5dp"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="2dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

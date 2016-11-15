@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">搞笑囧图</string>
+    <string name="radio_button_heavy">爆笑</string>
+    <string name="radio_button_comic">漫画</string>
+    <string name="radio_button_meng">萌图</string>
+    <string name="radio_button_gif">动图</string>
+    <string name="radio_button_more">更多</string>
+    <string-array name="spinner_heavy">
+        <item>最新爆笑</item>
+        <item>今日热门</item>
+        <item>本周热门</item>
+    </string-array>
+    <string-array name="spinner_comic">
+        <item>最新漫画</item>
+        <item>今日热门</item>
+        <item>本周热门</item>
+    </string-array>
+    <string-array name="spinner_meng">
+        <item>最新萌图</item>
+        <item>今日热门</item>
+        <item>本周热门</item>
+    </string-array>
+    <string-array name="spinner_gif">
+        <item>最新动图</item>
+        <item>今日热门</item>
+        <item>本周热门</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_info">
+            ©头条出品toutiao.com
+    </string>
+    <string name="app_edition">
+        v2.4.1 Build goapk_307c3ea_20131127
+    </string>
+</resources>

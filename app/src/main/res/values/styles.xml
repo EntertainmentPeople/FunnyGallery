@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--为底部菜单设置style-->
+    <style name="MenuRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/radio_selector</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--更多页面中item中RelativeLayout-->
+    <style name="MoreItemRelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_more_item_pressed</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!--更多页面中item中横线-->
+    <style name="MoreItemImageLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/line_pop</item>
+    </style>
+
+    <style name="MoreItemSize">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--更多页面中item中箭头-->
+    <style name="MoreItemImageArrow" parent="MoreItemSize">
+        <item name="android:src">@drawable/icon_arrow</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--更多页面中item中前面的TextView-->
+    <style name="MoreItemTextViewFront" parent="MoreItemSize">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--更多页面中item中后面的TextView-->
+    <style name="MoreItemTextViewAfter" parent="MoreItemSize">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <!--更多页面中item中CheckBox-->
+    <style name="MoreItemCheckBox" parent="MoreItemSize">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/icon_arrow</item>
+    </style>
+</resources>

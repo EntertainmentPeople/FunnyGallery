@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_more_item"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_more_login"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="头条登录" />
+
+                <TextView
+                    android:id="@+id/tv_more_login"
+                    style="@style/MoreItemTextViewAfter"
+                    android:text="点击登录" />
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout
+                android:id="@+id/rl_more_myfavor"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="我的收藏" />
+
+                <TextView
+                    android:id="@+id/tv_more_myfavor"
+                    style="@style/MoreItemTextViewAfter"
+                    android:text="0" />
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_more_item"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/MoreItemRelativeLayout">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="收藏同时转发" />
+
+                <CheckBox
+                    android:id="@+id/cb_more_favorandshare"
+                    style="@style/MoreItemCheckBox" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout style="@style/MoreItemRelativeLayout">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="展示图片评论" />
+
+                <CheckBox
+                    android:id="@+id/cb_more_showcomment"
+                    style="@style/MoreItemCheckBox" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout style="@style/MoreItemRelativeLayout">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="保存浏览记录" />
+
+                <CheckBox
+                    android:id="@+id/cb_more_saverecode"
+                    style="@style/MoreItemCheckBox" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout style="@style/MoreItemRelativeLayout">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="夜间模式" />
+
+                <CheckBox
+                    android:id="@+id/cb_more_night"
+                    style="@style/MoreItemCheckBox" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout style="@style/MoreItemRelativeLayout">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="新图提醒" />
+
+                <CheckBox
+                    android:id="@+id/cb_more_newremind"
+                    style="@style/MoreItemCheckBox" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout
+                android:id="@+id/rl_more_downloadnum"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="离线下载数目" />
+
+                <TextView
+                    android:id="@+id/tv_more_downloadnum"
+                    style="@style/MoreItemTextViewAfter"
+                    android:text="前60张" />
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout
+                android:id="@+id/rl_more_clearcache"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="清除图片缓存" />
+
+                <TextView
+                    android:id="@+id/tv_more_clearcache"
+                    style="@style/MoreItemTextViewAfter"
+                    android:text="当前缓存:0B" />
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_more_item"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_more_feedback"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="意见反馈" />
+
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+
+            <ImageView style="@style/MoreItemImageLine" />
+
+            <RelativeLayout
+                android:id="@+id/rl_more_update"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="检查新版本" />
+
+                <TextView
+                    android:id="@+id/tv_more_update"
+                    style="@style/MoreItemTextViewAfter"
+                    android:text="当前版本2.4.1" />
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+            <ImageView style="@style/MoreItemImageLine" />
+            <RelativeLayout
+                android:id="@+id/rl_more_recommend"
+                style="@style/MoreItemRelativeLayout"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/MoreItemTextViewFront"
+                    android:text="推荐给朋友" />
+
+                <ImageView style="@style/MoreItemImageArrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ccc"
+            android:text="@string/app_info" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ccc"
+            android:text="@string/app_edition" />
+    </LinearLayout>
+</ScrollView>
